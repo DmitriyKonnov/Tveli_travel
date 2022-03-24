@@ -4,4 +4,10 @@
     padding: 0;
 }
 
-@import 'blocks/header/header.scss'
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@import 'blocks/header/header.scss';
