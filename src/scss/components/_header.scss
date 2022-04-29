@@ -1,0 +1,27 @@
+.header {
+  &__logo{
+    font-size: 48px;
+    span{
+      color: #FF5300;
+    }
+  }
+  &__container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  &__list{
+    display: flex;
+  }
+  &__item{
+    &:not(:first-child){
+      margin-left: 60px;
+    }
+
+    list-style-type: none;
+  }
+}
