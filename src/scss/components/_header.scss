@@ -14,6 +14,7 @@
 }
 
 .nav {
+
   &__list{
     display: flex;
   }
@@ -21,7 +22,35 @@
     &:not(:first-child){
       margin-left: 60px;
     }
-
+    font-size: 20px;
+    line-height: 23px;
     list-style-type: none;
+  }
+  &__link{
+    position: relative;
+    color: #1D1B19;
+    opacity: 0.5;
+    transition: opacity 0.8s;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -10%;
+      background: #FF5300;
+      height: 3px;
+      width: 0;
+      transition: width 0.8s, opacity 0.8s;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    &:hover {
+      opacity: 1;
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
   }
 }
