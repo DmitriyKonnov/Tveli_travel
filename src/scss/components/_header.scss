@@ -14,13 +14,16 @@
 }
 
 .nav {
-
+  width: 80%;
+  max-width: 833px;
   &__list{
     display: flex;
+    justify-content: space-between;
+    padding: 0;
   }
   &__item{
     &:not(:first-child){
-      margin-left: 60px;
+      padding-right: 10px;
     }
     font-size: 20px;
     line-height: 23px;
