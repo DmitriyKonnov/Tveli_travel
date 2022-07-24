@@ -1,0 +1,20 @@
+.benefit {
+  margin-bottom: 160px;
+}
+
+.benefit__list {
+  display: flex;
+  justify-content: space-between;
+  .benefit__item {
+    display: flex;
+    align-items: center;
+    p {
+      display: flex;
+      flex-direction: column;
+      margin-left: 45px;
+      span {
+        color: var(--second-color);
+      }
+    }
+  }
+}
